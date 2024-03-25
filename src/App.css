@@ -1,42 +1,247 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Importation des polices Nohemi */
+@font-face {
+  font-family: 'Nohemi-Medium';
+  src: url('../fonts/Nohemi-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} @font-face {
+  font-family: 'Nohemi-Bold';
+  src: url('../fonts/Nohemi-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+} @font-face {
+  font-family: 'Nohemi-Semibold';
+  src: url('../fonts/Nohemi-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+body { background-color: #F9F9F9; /* Background de page */ }
+
+
+/* HEADER */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #F9F9F9;
+  position: fixed; 
+  width: 100%; 
+  top: 0;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li {
+  display: inline; /*liste horizontalement alignée*/
+  margin-right: 20px;
+}
+
+.nav-links ul li:last-child {
+  margin-right: 6em;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #303031; /*couleur des nav_links*/
+  transition: color 0.3s;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a:active {
+  color: #71a894; /*couleur en hover*/
+}
+
+
+
+/* HERO */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 10em;
+  background-color: #F9F9F9; /* Couleur de fond */
+  height: calc(100vh); /* 100vh la hauteur de l'écran*/
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #303031;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #303031;
+}
+
+.hero-content p {
+  font-size: 16px;
+  width: 70%;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.cta-btn {
+  background-color: #71a894;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #5c8b72;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+
+
+/* QUI SOMMES-NOUS ? */
+.about-us {
+  background-color: #f3f0ea;
+  padding: 100px 0;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10em;
+}
+
+.about-us-content img {
+  max-width: 50%;
+}
+
+.text-content {
+  max-width: 45%;
+}
+
+.text-content h1 {
+  font-size: 36px;
+  color: #303031;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #303031;
+  line-height: 1.5;
+}
+
+
+
+/* NOS VALEURS */
+.our-values {
+  padding: 10em 6em 5em 10em;
+}
+
+.our-values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  flex:1;
+}
+
+.value-container {
+  width: 80%;
+  padding: 20px;
   text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: #303031; 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.value-container img {
+  width: 80px;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* RESERVATION */
+.book-your-table {
+  padding: 40px 10em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.book-your-table .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.left-section {
+  width: 50%;
+  color: #303031; 
 }
 
-.read-the-docs {
-  color: #888;
+.right-section {
+  width: 30%;
+  color: #303031;
+}
+
+.right-section form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+}
+
+.right-section form .form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section form .form-row.half {
+  flex-direction: row;
+}
+
+.right-section form .form-row.half > * {
+  flex: 1;
+  margin-right: 40px; 
+}
+
+.right-section form .form-row.half > *:last-child {
+  margin-right: 0;
+}
+
+.right-section form .form-row input {
+  padding: 10px;
+  border-radius: 0;
+  border: none; 
+  border-bottom: 2px solid #303031; 
+  transition: border-color 0.3s;
+  background-color: transparent; 
+  color: #303031; 
+}
+
+.right-section form .form-row input:focus {
+  border-color: #71a894;
+}
+
+.right-section form .button-container {
+  align-self: flex-end;
 }

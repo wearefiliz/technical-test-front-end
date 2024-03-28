@@ -1,0 +1,28 @@
+.our-values {
+    padding: 10em 6em 5em 10em;
+  }
+  
+  .our-values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    flex: 1;
+  }
+  
+  .value-container {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #303031; 
+  }
+  
+  .value-container img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  

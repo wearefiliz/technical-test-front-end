@@ -1,0 +1,32 @@
+.about-us {
+    background-color: #f3f0ea;
+    padding: 100px 0;
+  }
+  
+  .about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10em;
+  }
+  
+  .about-us-content img {
+    max-width: 50%;
+  }
+  
+  .text-content {
+    max-width: 45%;
+  }
+  
+  .text-content h1 {
+    font-size: 36px;
+    color: #303031;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    color: #303031;
+    line-height: 1.5;
+  }
+  

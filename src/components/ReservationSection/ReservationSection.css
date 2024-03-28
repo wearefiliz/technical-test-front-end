@@ -1,0 +1,46 @@
+.book-your-table {
+    padding: 40px 10em;
+  }
+  
+  .book-your-table .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-section {
+    width: 50%;
+    color: #303031; 
+  }
+  
+  .right-section {
+    width: 30%;
+    color: #303031;
+  }
+  
+  .right-section form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+  
+  .right-section form .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-section form .form-row.half {
+    flex-direction: row;
+  }
+  
+  .right-section form .form-row.half > * {
+    flex: 1;
+    margin-right: 40px; 
+  }
+  
+  .right-section form .form-row.half > *:last-child {
+    margin-right: 0;
+  }
+  
+  .right-section form .form-row
+  
